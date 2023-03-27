@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&family=Roboto:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  background: linear-gradient(120deg, rgb(15, 1, 39) 0%, rgb(51, 41, 70)100%);
+}
+
+h1 {
+  margin-top: 32px;
+  padding-bottom: 50px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 40%;
+  min-height: 600px;
+  background: transparent;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 15px;
+  padding-bottom: 32px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 40%;
+  cursor: pointer;
+}
+
+.todo-form {
+  padding-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px;
+  border: 2px solid purple;
+  outline: none;
+  width: 80%;
+  background: transparent;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.todo-input::placeholder {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(90deg, rgb(253, 7, 163) 0%, rgb(247, 134, 200)100%);
+  color: white;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  width: 100px
+}
+
+.edit-button {
+  padding: 6px;
+  width: 50px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  background: rgb(253, 7, 163);
+  color: white;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.todo-input.edit {
+  border: 2px solid #149fff;
+}
+
+.todo-button.edit {
+  background: linear-gradient(90deg, rgba(48, 16, 255, 1) 0%, rgba(100, 115, 255, 1)100%);
+  padding: 16px 22px
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: white;
+  background: rgb(144, 0, 246);
+  padding: 16px;
+  border-radius: 4px;
+  width: 90%;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+
+}
